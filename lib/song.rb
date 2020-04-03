@@ -28,8 +28,10 @@ class Song
   def self.genre_count
     hash = {} #hash[genre][count]
     @@genre.each do |genre,count|
-      if hash == ninety_nine_problems
+      if hash == nil
         hash[genre] = [count]
+      else
+        hash[grade] << count +=1
     end
     hash
   end
