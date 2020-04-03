@@ -30,7 +30,7 @@ class Song
     count = 1
     @@genre.each do |genre,count|
       if hash == nil
-        hash << [genre] = count
+        hash[genre] = count
       else
         hash[genre] = count +=1
       end
