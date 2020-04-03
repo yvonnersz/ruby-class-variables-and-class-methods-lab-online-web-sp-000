@@ -31,7 +31,7 @@ class Song
       if hash == nil
         hash << genre
       else
-        hash[genre] = @@count +=1
+
       end
     end
     hash
