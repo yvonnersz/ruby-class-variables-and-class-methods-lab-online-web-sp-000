@@ -29,7 +29,7 @@ class Song
     hash = {} #hash[genre][count]
     @@genres.each do |genre|
       hash << genre
-    end        
+    end
   end
 
 end
