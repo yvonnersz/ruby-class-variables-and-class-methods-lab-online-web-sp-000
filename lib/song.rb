@@ -29,7 +29,7 @@ class Song
     hash = {} #hash[genre][count]
     @@genre.each do |genre,count|
       count = 0
-      if hash[genre].uniq!
+      if hash[genre].uniq! == true
         hash[genre] = count
       else
         hash[genre] = count +=1
