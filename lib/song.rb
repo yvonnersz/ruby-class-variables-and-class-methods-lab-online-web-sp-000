@@ -31,7 +31,7 @@ class Song
       if hash == nil
         hash[genre] = [count]
       else
-        hash[grade] << count +=1
+        hash[genre] << count +=1
       end
     end
     hash
