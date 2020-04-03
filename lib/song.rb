@@ -29,8 +29,9 @@ class Song
     hash = {} #hash[genre][count]
     @@genre.each do |genre,count|
       if hash == nil
-        hash << genre
-
+        hash << [genre]
+      else
+        hash[genre] = @@count +=1
       end
     end
     hash
