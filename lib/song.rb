@@ -32,6 +32,7 @@ class Song
         hash[genre] = [count]
       else
         hash[grade] << count +=1
+      end
     end
     hash
   end
