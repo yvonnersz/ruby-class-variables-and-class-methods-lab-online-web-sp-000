@@ -26,13 +26,10 @@ class Song
   end
 
   def self.genre_count
-    @@genres.each do |genre,count|
-      if genre.uniq! == true
-        @@genres[genre] = 1
-      else
-        @@genres[genre] = 3
-      end
-    end
+    hash = {} #hash[genre][count]
+    @@genres.each do |genre|
+      hash << genre
+    end        
   end
 
 end
