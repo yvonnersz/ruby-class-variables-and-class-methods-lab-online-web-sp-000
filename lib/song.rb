@@ -30,7 +30,6 @@ class Song
     @@genre.each do |genre,count|
       if hash == nil
         hash << genre
-      else
 
       end
     end
