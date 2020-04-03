@@ -31,6 +31,8 @@ class Song
     @@genre.each do |genre,count|
       if hash == nil
         hash[genre] = count
+      elsif hash != nil
+        hash[genre] = count +=1
       end
     end
     hash
